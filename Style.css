@@ -1,0 +1,235 @@
+/* ESTILOS DE PAPEL Y TIPOGRAFÍA HISTÓRICA */
+body {
+    background-color: #d2c4b0;
+    background-image: radial-gradient(#bca890 1px, transparent 0);
+    background-size: 20px 20px;
+    font-family: 'EB Garamond', 'Georgia', serif;
+    color: #1e1b18;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.newspaper {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #f4ede0;
+    padding: 35px;
+    border: 2px solid #4a3e2e;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25), inset 0 0 60px rgba(139, 115, 85, 0.2);
+}
+
+/* CABECERA (SEGÚN BOCETO) */
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 3px solid #1e1b18;
+    padding-bottom: 8px;
+}
+
+.titulo-periodico {
+    font-family: 'Cinzel', 'UnifrakturMaguntia', serif;
+    font-size: 2.8rem;
+    font-weight: 900;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.fecha-periodico {
+    font-family: 'Cinzel', serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #3a3023;
+    white-space: nowrap;
+}
+
+.linea-separadora {
+    border-top: 2px solid #1e1b18;
+    margin-top: 4px;
+    margin-bottom: 20px;
+}
+
+/* ESTRUCTURA PRINCIPAL: 70% Y 30% */
+.content-container {
+    display: flex;
+    gap: 25px;
+}
+
+/* COLUMNA IZQUIERDA (70%) */
+.columna-izquierda {
+    flex: 7; /* Representa aprox el 70% del ancho total */
+}
+
+.subtitulo-inicia {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #1e1b18;
+    padding-bottom: 2px;
+    text-transform: uppercase;
+    color: #8b0000;
+}
+
+.capitular {
+    float: left;
+    font-family: 'Cinzel', serif;
+    font-size: 3.5rem;
+    line-height: 0.8;
+    padding-top: 4px;
+    padding-right: 8px;
+    color: #8b0000;
+}
+
+.lead {
+    font-weight: bold;
+    font-size: 1.05rem;
+    text-align: justify;
+}
+
+p {
+    text-align: justify;
+    font-size: 0.98rem;
+    margin-bottom: 12px;
+}
+
+.linea-divisoria-interna {
+    text-align: center;
+    color: #6a5742;
+    margin: 20px 0;
+    letter-spacing: 3px;
+}
+
+/* SECCIÓN NAPOLEÓN */
+.seccion-napoleon h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid #1e1b18;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.grid-napoleon {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.imagen-napoleon {
+    flex: 0 0 140px;
+    margin: 0;
+    padding: 5px;
+    background-color: #e6dac8;
+    border: 1px solid #3a3023;
+    text-align: center;
+}
+
+.imagen-napoleon img {
+    width: 100%;
+    height: auto;
+    filter: sepia(0.3) contrast(1.1);
+}
+
+.imagen-napoleon figcaption {
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+.texto-napoleon {
+    flex: 1;
+}
+
+/* COLUMNA DERECHA (30%) - CAJA VERTICAL */
+.columna-derecha {
+    flex: 3; /* Representa aprox el 30% del ancho total */
+}
+
+.caja-vertical-destacada {
+    border: 2px solid #3a3023;
+    background-color: #ebdcc8;
+    padding: 15px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.08);
+}
+
+.caja-vertical-destacada h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.05rem;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #3a3023;
+    padding-bottom: 5px;
+    color: #8b0000;
+}
+
+.imagen-caudillo {
+    margin: 0 0 10px 0;
+    padding: 5px;
+    background-color: #f4ede0;
+    border: 1px solid #3a3023;
+    text-align: center;
+}
+
+.imagen-caudillo img {
+    width: 100%;
+    height: auto;
+    filter: sepia(0.3) contrast(1.1);
+}
+
+.imagen-caudillo figcaption {
+    font-size: 0.8rem;
+    margin-top: 4px;
+}
+
+.info-caudillo h4 {
+    font-size: 0.9rem;
+    margin: 10px 0 3px 0;
+    font-family: 'Cinzel', serif;
+}
+
+.info-caudillo p {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+}
+
+.linea-corta {
+    border-top: 1px dashed #6a5742;
+    margin: 8px 0;
+}
+
+/* ANIMACIÓN */
+.fade-in {
+    animation: fadeIn 0.8s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* PIE DE PÁGINA */
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+/* RESPONSIVO EN PANTALLAS PEQUEÑAS */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
+    .grid-napoleon {
+        flex-direction: column;
+    }
+    .header-main {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
